@@ -6,7 +6,7 @@ namespace Dice_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Press any key to roll the dice!");
         }
     }
 }
