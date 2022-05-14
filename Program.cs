@@ -23,6 +23,7 @@ namespace Dice_Game
 
             for (int i = 0; i < roundNum; i++)
             {
+                Console.WriteLine();
                 Console.WriteLine("Press any key to roll the dice!");
                 Console.ReadKey();
                 playerRandomNum = random.Next(1, 7);
@@ -37,11 +38,13 @@ namespace Dice_Game
                 if (playerRandomNum > computerRandomNum)
                 {
                     playerWins++;
+                    Console.WriteLine("You win!");
                     Console.WriteLine("Player Score: " + playerWins + " : " + "Computer Score: " + computerWins);
                 }
                 else if (playerRandomNum < computerRandomNum)
                 {
                     computerWins++;
+                    Console.WriteLine("Computer win!");
                     Console.WriteLine("Player Score: " + playerWins + " : " + "Computer Score: " + computerWins);
                 }
                 else
@@ -54,17 +57,17 @@ namespace Dice_Game
 
             if (playerWins > computerWins)
             {
-                Console.WriteLine("Final Score- \r\nPlayer: " + playerWins + "\r\nComputer: " + computerWins + "\r\nDraw: " + draw);
+                Console.WriteLine("--- Final Score --- \r\nPlayer: " + playerWins + "\r\nComputer: " + computerWins + "\r\nDraw: " + draw);
                 Console.WriteLine("Player wins!");
             }
             else if (playerWins < computerWins)
             {
-                Console.WriteLine("Final Score- \r\nPlayer: " + playerWins + "\r\ncomputer: " + computerWins + "\r\nDraw: " + draw);
+                Console.WriteLine("--- Final Score --- \r\nPlayer: " + playerWins + "\r\ncomputer: " + computerWins + "\r\nDraw: " + draw);
                 Console.WriteLine("Computer wins!");
             }
             else
             {
-                Console.WriteLine("Final Score- \r\nPlayer: " + playerWins + "\r\nComputer: " + computerWins + "\r\nDraw: " + draw);
+                Console.WriteLine("--- Final Score --- \r\nPlayer: " + playerWins + "\r\nComputer: " + computerWins + "\r\nDraw: " + draw);
                 Console.WriteLine("It's a draw");
             }
         }
