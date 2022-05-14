@@ -6,7 +6,15 @@ namespace Dice_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Press any key to roll the dice!");
+
+            int playerRandomNum;
+
+            Random random = new Random();
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Press any key to roll the dice!");
+            }
         }
     }
 }
