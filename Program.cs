@@ -39,18 +39,19 @@ namespace Dice_Game
                 {
                     playerWins++;
                     Console.WriteLine("You win!");
-                    Console.WriteLine("Player Score: " + playerWins + " : " + "Computer Score: " + computerWins);
+                    Console.WriteLine("Player Score: {0}\t Computer Score: {1}\t Draw: {2}", playerWins, computerWins, draw);
                 }
                 else if (playerRandomNum < computerRandomNum)
                 {
                     computerWins++;
                     Console.WriteLine("Computer win!");
-                    Console.WriteLine("Player Score: " + playerWins + " : " + "Computer Score: " + computerWins);
+                    Console.WriteLine("Player Score: {0}\t Computer Score: {1}\t Draw: {2}", playerWins, computerWins, draw);
                 }
                 else
                 {
                     draw++;
                     Console.WriteLine("It's a draw");
+                    Console.WriteLine("Player Score: {0}\t Computer Score: {1}\t Draw: {2}", playerWins, computerWins, draw);
                 }
             }
             Console.WriteLine("--------------");
